@@ -7,7 +7,7 @@ const mysql = require("mysql");
 const cors = require("cors");
 require("dotenv").config();
 
-const authorizationHandler = require("./auth/router");
+const authorizationHandler = require("../auth/router");
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
